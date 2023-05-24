@@ -1,0 +1,20 @@
+== Testando a aplicação
+
+
+Para ver os registros de produtos:
+
+====
+[src,bash]
+----
+$ curl http://localhost:8080/product
+----
+====
+
+Para criar um novo registro de produto:
+
+====
+[src,bash]
+----
+$ curl -i -H "Content-Type:application/json" -d '{"name": "First category", "description": "Category test"}' http://localhost:8080/category
+----
+====
